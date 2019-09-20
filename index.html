@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FlexBox - Assert Tecnologia</title>
+    <link rel="stylesheet" href="reveal.js-2.1/reveal.js-2.1/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js-2.1/reveal.js-2.1/css/theme/night.css">
+    <link rel="stylesheet" href="reveal.js-2.1/reveal.js-2.1/plugin/">
+		<link rel="stylesheet" href="reveal.js-2.1/reveal.js-2.1/lib/css/zenburn.css">
+  </head>
+  <body>
+    <div class="reveal">
+    <div class="slides">
+        <div class="topo"></div>
+      <section>
+        <h1>FlexBox</h1>
+        <h3>Elevando seu css a um próximo nível</h3>
+        <br><br>
+        <h6>1ª Workshop na assert</h6>
+      </section>
+      <section>
+        <h2>Antes de tudo....</h2>
+        <ul>
+          <li class="fragment">Não, você não irá aprender isso apenas hoje.</li>
+          <li class="fragment">Isso não será um From Zero to Hero.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>O que veremos hoje:</h2>
+        <ul>
+          <li class="fragment">flex</li>
+          <li class="fragment">flex-direction</li>
+          <li class="fragment">flex-wrap</li>
+          <li class="fragment">justify-content</li>
+          <li class="fragment">align-items</li>
+          <li class="fragment">align-self</li>
+        </ul>
+      </section>
+
+      <section>
+          <h2>Algumas dicas do editor antes</h2>
+          <ul>
+            <li class="fragment">vs-Code</li>
+            <li class="fragment">Extenções</li>
+          </ul>
+      </section>
+
+      <section>
+        <h2>Tá mais que diabos é isso?</h2>
+        <ul>
+          <li class="fragment"> FlexBox é um modelo do CSS que 
+            permite que os componentes sejam empilhados verticalmente e 
+            horizontalmente, isso é chamado de sistema de Grid.
+             Aqui eu darei uma breve introdução ao FlexBox, 
+             um sistema de Grid que utiliza apenas CSS e HTML puro, 
+             e com algumas simples propriedades já da pra organizar seus componentes e deixar sua página responsiva.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Onde posso usar?</h2>
+        <ul>
+          <li class="fragment">Em qualquer local  em que o motor de renderização do browser vai ler.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h1>Como usar o FlexBox</h1>
+        <ul>
+          <li class="fragment">Flex</li>
+          <li> Não esqueça de usar o flex</li>
+          <pre><code class="cssText" data-trim contenteditable>
+            .class {
+              display:flex;
+            }
+          </code></pre>
+          <li> Tá cara legal, mas agora, show me code please.</li>
+          <li><a href="flex/flex.html" target="_blank">Clique-me</a></li>
+        </ul>
+       </section>
+      <section>
+       <h1>Flex-Direction</h1>
+       <ul>
+          <li class="fragment">
+          Esse cara só não é mais importante que o FLEX, visto anteriormente, mas sem ele
+          não conseguimos fazer nada, porque ....
+          </li>
+          <li class="fragment">row</li>
+          <li class="fragment">column</li>
+          <li class="fragment">row-reverse</li>
+          <li class="fragment">column-reverse</li>
+          <li><a href="flex/flex-direction.html" target="_blank">Ixpia só que loco mano.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h1>Align-Items</h1>
+        <ul>
+          <li>O que ele faz é basicamente alinhar o componente no eixo contrario de sua direção
+            , por exemplo, se a direção do componente está horizontal  então o align-itens irá alinhar os componentes na vertical. 
+            Se o flex-direction é uma column então ele irá alinhar na horizontal./li>
+        </ul>
+        <li class="fragment">flex-start</li>
+        <li class="fragment">center</li>
+        <li class="fragment">flex-end</li>
+        <li><a href="flex/align-itens.html" target="_blank">Vem cá que eu te mostro</a></li>
+      </section>
+      <section>
+        <h1>Justify-content</h1>
+        <ul>
+          <li >Ele alinha os componentes, assim como o align-items porém ele alinha no mesmo eixo 
+            da direção dos componentes. Se o container for uma row, ele irá alinhar os 
+            componentes horizontalmente. Um exemplo:
+          </li>
+          <li class="fragment">flex-start</li>
+          <li class="fragment">center</li>
+          <li class="fragment">space-between</li>
+          <li class="fragment">space-around</li>
+        </ul>
+        <li class="fragment"><a href="flex/justify-content.html" target="_blank">Interessante, não? CLica ai e vamos ver</a></li>
+      </section>
+      
+      <section>
+        <h1>Align-self</h1>
+        <ul>
+          <li class="fragment">O align-self faz com que algum componente seja 
+            alinhado separadamente, independente do container pai, ele possui 
+            as mesmas propriedades do align-items</li>
+            <li class="fragment">flex-start</li>
+            <li class="fragment">center</li>
+            <li class="fragment">flex-end</li>
+        </ul>
+        <li class="fragment"><a href="flex/align-self.html" target="_blank">Bora bora bora</a></li>
+      </section>
+      
+      <section>
+        <h1>Flex-wrap</h1>
+        <ul>
+          <li class="fragment">O flex-wrap faz com que se os componentes passarem do 
+            tamanho da tela, ele os manda para baixo (está propriedade é ótima para 
+            responsividade)</a></li>
+            <li class="fragment">wrap</li>
+            <li class="fragment">wrap-reverse</li>
+            <li class="fragment"><a href="flex/wrap.html" target="_blank">Legal, mostra ai.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h1>Align-content</h1>
+        <ul>
+          <li class="fragment">O align-content funciona basicamente da mesma forma que o 
+            align-itens porém vou usar o exemplo do flex-wrap para dizer uma das principais
+             diferenças. Bom, no exemplo anterior, eu usei o align-items: center e ele não 
+             alinhou os retângulos exatamente no centro, isso porque o align-items é para 
+             componentes que estejam em uma mesma linha, quando eles se separam como é o
+              que acontece se eu coloco flex-wrap: wrap o align-items já não centraliza 
+              mais, nos precisamos usar o align-content , então eu vou apenas trocar o 
+              align-items: center pelo align-content: center</li>
+          <li class="fragment"><a href="flex/align-content.html">Chega mais</a></li>
+        </ul>
+      </section>
+      <section>
+        <h1>Dúvidas?</h1>
+      </section>
+      <section>
+        <h1>Obrigado</h1>
+
+      </section>
+               
+    </div>
+  </div>
+  <script src="reveal.js-2.1/reveal.js-2.1/lib/js/head.min.js"></script>
+  <script src="reveal.js-2.1/reveal.js-2.1/js/reveal.min.js"></script>
+  <script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal.js-2.1/reveal.js-2.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js-2.1/reveal.js-2.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js-2.1/reveal.js-2.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js-2.1/reveal.js-2.1/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js-2.1/reveal.js-2.1/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+  </body>
+</html>
